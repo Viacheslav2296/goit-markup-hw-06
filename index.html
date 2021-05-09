@@ -401,11 +401,11 @@
                 </div>
                 <button class="footer-button" type="submit">Подписаться
                     <svg class="button-icon" width="24" height="24">
-                        <use href="./images/icons/icons.svg#icon-send"></use>
+                        <use href="./images/icons/icons-modal.svg#icon-send"></use>
                     </svg>
                 </button>
-        </div>
-        </form>
+
+            </form>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -420,7 +420,7 @@
                     <span class="modal-form-input-wrapper">
                         <input type="text" name="user-name" class="modal-form-input">
                         <svg class="modal-form-icon">
-                            <use href="./images/icons/icons.svg#modal-person"></use>
+                            <use href="./images/icons/icons-modal.svg#icon-human"></use>
                         </svg>
                     </span>
                 </label>
@@ -429,7 +429,7 @@
                     <span class="modal-form-input-wrapper">
                         <input type="tel" name="user-phone" class="modal-form-input">
                         <svg class="modal-form-icon">
-                            <use href="./images/icons/icons.svg#icon-phone"></use>
+                            <use href="./images/icons/icons-modal.svg#icon-phone"></use>
                         </svg>
                     </span>
                 </label>
@@ -438,7 +438,7 @@
                     <span class="modal-form-input-wrapper">
                         <input type="email" name="user-email" class="modal-form-input">
                         <svg class="modal-form-icon">
-                            <use href="./images/icons/icons.svg#icon-poczta"></use>
+                            <use href="./images/icons/icons-modal.svg#icon-poczta"></use>
                         </svg>
                     </span>
                 </label>
@@ -446,14 +446,9 @@
                     <span class="description-wrapper">Комментарий</span>
                     <textarea name="user-message" placeholder="Введите текст" class="modal-form-message"></textarea>
                 </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" name="user-policy" class="modal-form-check-policy visually-hidden">
-                    Соглашаюсь с рассылкой и принимаю
-                    <a href="" class="policy">Условия договора</a>
-                    <svg class="checkbox-icon">
-                        <use href="./images/icons/icons.svg#icon-check"></use>
-                    </svg>
-                </label>
+                <input type="checkbox" name="user-checkbox" class="checkbox visually-hidden" id="checkbox" />
+                <label class="checkbox-label" for="checkbox">
+                    Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a></label>
                 <button type="submit" class="modal-form-btn">Отправить</button>
             </form>
         </div>
