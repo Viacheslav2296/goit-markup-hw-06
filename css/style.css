@@ -547,7 +547,7 @@ color: var(--color-title);
     flex-direction: column;
     width: 358px;
 }
-.form-mail input{
+.form__input{
     padding: 15px;
 
     background-color: transparent;
@@ -555,11 +555,11 @@ color: var(--color-title);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 }
-.form-mail input::placeholder {
+.form__input::placeholder {
     font-size: 16px;
     line-height: 20px;
 }
-.form button{
+.footer-button{
     position: relative;
     display: flex;
     justify-content: center;
@@ -578,6 +578,7 @@ color: var(--color-title);
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
 }
 .button-icon{
     position: absolute;
@@ -757,28 +758,42 @@ color: var(--color-title);
   content: "";
   padding-left: 5px;
 }
+.checkbox-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
 
 
 .checkbox-label::before {
+  display: flex;
   content: "";
-  display: inline-block;
   width: 16px;
   height: 16px;
   border: 1px solid var(--footer-bg);
   border-radius: 3px;
+  margin-right: 8px;
 }
 
 .checkbox:checked + .checkbox-label::before {
-  background-image: url(../images/icons/icons-modal.svg#icon-check);
+  background-image: url(../images/icons/check.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   background-color: var(--icon-bg);
   border-color: var(--footer-bg);
+  border: none;
 }
 .checkbox-link{
     color: #2196F3;
-
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-left: 4px;
 }
 
 .modal-form-btn {
